@@ -1,8 +1,10 @@
+import React from 'react'
+import TestComponent from './TestComponent'
 
 function App() {
   return (
     <div>
-      test
+      <TestComponent/>
     </div>
   )
 }
