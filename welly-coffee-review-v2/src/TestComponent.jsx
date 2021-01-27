@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import firebase from './fbConfig'
+import db from './fbConfig'
 
-const db = firebase.firestore()
 
 
 const TestComponent = () => {
