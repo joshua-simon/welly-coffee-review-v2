@@ -4,9 +4,9 @@ import CafeList from './CafeList'
 
 const Main = () => {
     return(
-        <div>
-            <AddReview/>
+        <div className = 'main-block-one'>
             <CafeList/>
+            <AddReview/>
         </div>
     )
 }

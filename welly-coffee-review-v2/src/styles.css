@@ -1,3 +1,17 @@
+@font-face{
+    font-family: 'Canela-Medium';
+    src: url('./fonts/Canela-Regular.woff') format('woff')
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: antiquewhite;
+    max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+      max-width: 1200px;
+}
+
 form {
     display:flex;
     flex-direction:column;
@@ -6,4 +20,39 @@ form {
     font-family: 'Roboto', sans-serif;
     color:rgb(104, 98, 98);
     border-left: 1px solid rgb(104, 98, 98);
+}
+
+.cafe-container-container {
+    margin-top:5%;
+    color:rgb(104, 98, 98);
+}
+
+.cafe-container{
+    padding: 1%;
+    margin:1%;
+    transform:translateX(-2%);
+    letter-spacing:1px;
+    font-family: 'Canela-Medium'
+}
+
+.cafe-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+}
+.cafe-container img {
+    width:150px;
+    height:100px;
+    border-radius:5%;
+}
+
+.cafe-container:hover{
+    background-color:rgb(104, 98, 98);
+    color:antiquewhite;
+    border-radius: 5px;
+}
+
+.main-block-one{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
 }
