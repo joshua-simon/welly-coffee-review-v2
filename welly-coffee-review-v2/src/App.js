@@ -1,14 +1,17 @@
 import React from 'react'
-import TestComponent from './TestComponent'
-import AddReview from './components/AddReview'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Main from './components/Main'
 import './styles.css'
 
 function App() {
   return (
-    <div>
-      <TestComponent/>
-      <AddReview/>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route path="/" exact component={Main} />
+        </Switch>
+      </div>
+    </Router>
   )
 }
 
