@@ -64,3 +64,29 @@ form {
     font-family: 'Canela-Medium';
     color:rgb(104, 98, 98);
 }
+
+.cafe-header {
+    text-align:center;
+    margin-top:5%;
+    color:rgb(104, 98, 98);
+    font-family: 'Canela-Medium'
+    
+}
+
+.cafe-header img {
+    height:300px;
+    width:300px;
+    border-radius:100%;
+    margin:1%;
+}
+
+.contact-details {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.contact-details li {
+    padding:1%;
+}

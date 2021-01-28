@@ -1,9 +1,10 @@
 import React, { useState,useEffect } from 'react'
+import CafeHeader from './CafeHeader'
 import db from '../fbConfig'
 
 const CafeReviews = ({match}) => {
 
-    const [cafe,setCafe] = useState([])
+    const [cafe,setCafe] = useState({name:'',photoURL:'',address:'',phoneNumber:'', website:''})
     let id = match.params.id
 
  useEffect(() => {
@@ -11,13 +12,19 @@ const CafeReviews = ({match}) => {
         .doc(id)
         .get()
         .then(snapshot => {
-          setCafe(snapshot)
+          setCafe({
+              name: snapshot.data().name,
+              photoURL: snapshot.data().photoURL,
+              address: snapshot.data().address,
+              phoneNumber: snapshot.data().phoneNumber,
+              website: snapshot.data().website
+          })
         })
     },[])
 
     return(
         <div>
-           <h1>{cafe.data().name}</h1> 
+           <CafeHeader cafe = {cafe}/>
         </div>
     )
 }
