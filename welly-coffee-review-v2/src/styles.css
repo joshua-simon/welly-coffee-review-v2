@@ -32,7 +32,9 @@ form {
     margin:1%;
     transform:translateX(-2%);
     letter-spacing:1px;
-    font-family: 'Canela-Medium'
+    font-family: 'Canela-Medium';
+    color:rgb(104, 98, 98);
+    cursor: pointer;
 }
 
 .cafe-grid{
@@ -55,4 +57,10 @@ form {
 .main-block-one{
     display:grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.nav{
+    border-bottom: 1px solid rgb(150, 144, 144);
+    font-family: 'Canela-Medium';
+    color:rgb(104, 98, 98);
 }
