@@ -43,7 +43,9 @@ const CafeReviews = ({match}) => {
     return(
         <div>
            <CafeHeader cafe = {cafe}/>
+           <div className="reviews-container">
            <Review reviews = {filteredReviews}/>
+           </div>
         </div>
     )
 }

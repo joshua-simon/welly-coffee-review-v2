@@ -14,7 +14,7 @@ const Cafe = (props) => {
             style={{ textDecoration: "none", color: "#686262" }}
           >
             <div className="cafe-container">
-              <h2>{name}</h2>
+              <h3>{name}</h3>
               <img src={photoURL}></img>
             </div>
           </Link>

@@ -19,6 +19,7 @@ const CafeList = () => {
 
     return(
         <div className="cafe-container-container">
+            <h2 className = 'main-subheading'>Reviews</h2>
             <Cafe cafes = {cafes}/>
         </div>
     )
