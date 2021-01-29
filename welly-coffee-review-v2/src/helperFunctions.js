@@ -13,7 +13,7 @@ export const convertToStars = (stars) => {
   
   export const averageStarRating = (data) => {
     if(data.length){
-    let arr = data.map(item => parseInt(item.stars))
+    let arr = data.map(item => parseInt(item.data().stars))
     let total = arr.reduce((x,y) => x+y)
     let average = total/data.length
     let roundedAverage = Math.round(average)

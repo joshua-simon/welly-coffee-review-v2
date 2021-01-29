@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react'
 import CafeHeader from './CafeHeader'
 import Review from './Review'
 import db from '../fbConfig'
+import {averageStarRating} from '../helperFunctions'
 
 const CafeReviews = ({match}) => {
 
@@ -40,9 +41,11 @@ const CafeReviews = ({match}) => {
         return review.data().cafeName === cafe.name
     })
 
+    let okFineDontWork = averageStarRating(filteredReviews)
+
     return(
         <div>
-           <CafeHeader cafe = {cafe}/>
+           <CafeHeader cafe = {cafe} thing = {okFineDontWork}/>
            <div className="reviews-container">
            <Review reviews = {filteredReviews}/>
            </div>
